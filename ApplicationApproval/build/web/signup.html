@@ -1,19 +1,75 @@
 <html>
-<head>
-<body style ="background-color:orange;"> 
-    <form>
-<div align="center">
+    <head>
+        <link href="yell.css" rel="stylesheet" style="css/text" />
+        <style> 
+input[type=text] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=password] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
 
-    <h1 style="text align:centre;h"><u>COLLEGE APPLICATION APPROVAL</u></h1>
-<h1 style="text align:centre;h">SIGNUP HERE</h1>
-<input type ="text" placeholder="your name"><br><br>
-<input type =  "text" placeholder="email"><br><br>
-<input type =  "text" placeholder="phone num"><br><br>
-<input type =  "text" placeholder="password"><br><br>
-<input type =  "text" placeholder="confirm password"><br><br>
-<button type="button"><a href="firstpage.html">Sign up</button>
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+
+input[type=submit] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+</style>
+    </head>
+   
+<body background="yo.jpg"> 
+    <div class="header">
+        <h1><center>REGISTER HERE</center><h1>
+    </div>
+    <div class="login-page">
+  <div class="form">
+    <form method="post" action ="regervlet">
+        
+
+
+    <img src="chitkara_image.jpg" alt="Smiley face" height="100" width="100">
+<input type ="text"  name="name" placeholder="name"><br>
+<input type =  "text"  name="age" placeholder="age"><br>
+<div style="border:3px solid #ccc;height: 40px;width: 220px;margin-left:48px;background-color:"><br>Gender : <input type ="radio"  name="gender">Male
+    <input type ="radio"  name="gender">Female<br></div>
+<input type =  "text"  name="email" placeholder="email"><br>
+<input type ="password"  name="password" placeholder="password"><br>
+
+<input type="submit" value="Register"><br>
+
 
 </form>
     
+  </div>
+    </div>
 </body>
 </html>
