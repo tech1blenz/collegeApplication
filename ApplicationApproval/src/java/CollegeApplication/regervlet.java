@@ -21,6 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 public class regervlet extends HttpServlet {
     
     
+    @Override
     public void doPost(HttpServletRequest req,HttpServletResponse res) throws IOException
     {
         PrintWriter out=res.getWriter();
@@ -29,6 +30,7 @@ public class regervlet extends HttpServlet {
         String gender = req.getParameter("gender");
         String email= req.getParameter("email");
         String password= req.getParameter("password");
+        String ans= req.getParameter("ans");
         
        
         try {
@@ -36,7 +38,7 @@ public class regervlet extends HttpServlet {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con=DriverManager.getConnection(ss,"root","");
             Statement s=con.createStatement();
-                  String query="insert into register values('"+name+"',"+age+",'"+gender+"','"+email+"','"+password+"')";             
+                  String query="insert into register2 values('"+name+"',"+age+",'"+gender+"','"+email+"','"+password+"','"+ans+"')";             
                     int count=s.executeUpdate(query);
                      out.print("<body><center><b><font color='blue'></font></b></center></body>");
                     RequestDispatcher rd=req.getRequestDispatcher("firstpage.html");  

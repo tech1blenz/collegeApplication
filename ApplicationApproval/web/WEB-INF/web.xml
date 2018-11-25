@@ -12,6 +12,10 @@
         <servlet-name>regervlet</servlet-name>
         <servlet-class>CollegeApplication.regervlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>forgetpassword</servlet-name>
+        <servlet-class>CollegeApplication.forgetpassword</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ApplicationApproval</servlet-name>
         <url-pattern>/ApplicationApproval</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>regervlet</servlet-name>
         <url-pattern>/regervlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>forgetpassword</servlet-name>
+        <url-pattern>/forgetpassword</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

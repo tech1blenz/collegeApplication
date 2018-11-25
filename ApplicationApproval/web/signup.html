@@ -12,6 +12,16 @@ input[type=text] {
     transition: 0.5s;
     outline: none;
 }
+input[type=email] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
 input[type=password] {
     width: 70%;
     padding: 12px 20px;
@@ -39,10 +49,12 @@ input[type=submit] {
     outline: none;
 }
 
-input[type=text]:focus {
+input[type=email]:focus {
     border: 3px solid #555;
 }
-
+input[type=password]:focus {
+    border: 3px solid #555;
+}
 </style>
     </head>
    
@@ -61,9 +73,10 @@ input[type=text]:focus {
 <input type =  "text"  name="age" placeholder="age"><br>
 <div style="border:3px solid #ccc;height: 40px;width: 220px;margin-left:48px;background-color:"><br>Gender : <input type ="radio"  name="gender">Male
     <input type ="radio"  name="gender">Female<br></div>
-<input type =  "text"  name="email" placeholder="email"><br>
+<input type = "email"  name="email" placeholder="email"><br>
 <input type ="password"  name="password" placeholder="password"><br>
-
+<label>security question</label><br>
+<input type ="text"  name="ans" placeholder="what is your pet name"><br>
 <input type="submit" value="Register"><br>
 
 
