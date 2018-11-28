@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Aman
  */
-public class regervlet extends HttpServlet {
+public class leave extends HttpServlet {
     
     
     @Override
@@ -26,24 +26,24 @@ public class regervlet extends HttpServlet {
     {
         PrintWriter out=res.getWriter();
         String name = req.getParameter("name");
-        int age = Integer.parseInt(req.getParameter("age"));
-        String gender = req.getParameter("gender");
-        String email= req.getParameter("email");
-        String password= req.getParameter("password");
-        String ans= req.getParameter("ans");
-        
+        int id = Integer.parseInt(req.getParameter("id"));
+        String leave_from = req.getParameter("leave_from");
+        String leave_till= req.getParameter("leave_till");
+       
        
         try {
             String ss="jdbc:mysql://localhost:3306/hello";
             Class.forName("com.mysql.jdbc.Driver");
             Connection con=DriverManager.getConnection(ss,"root","");
             Statement s=con.createStatement();
-                  String query="insert into register2 values('"+name+"',"+age+",'"+gender+"','"+email+"','"+password+"','"+ans+"')";             
+                  String query="insert into leaveform values('"+name+"',"+id+",'"+leave_from+"','"+leave_till+"')";             
                     int count=s.executeUpdate(query);
                      out.print("<body><center><b><font color='blue'></font></b></center></body>");
-                    RequestDispatcher rd=req.getRequestDispatcher("index.html");  
+                    RequestDispatcher rd=req.getRequestDispatcher("firstpage.html");  
                     rd.include(req, res); 
-                    
+                  
+                     
+                   
         } catch (Exception ex ) {
             ex.getMessage();
         }

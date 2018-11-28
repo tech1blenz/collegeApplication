@@ -37,7 +37,7 @@ public class forgetpassword extends HttpServlet {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con=DriverManager.getConnection(ss,"root","");
             Statement s=con.createStatement();
-            String query="select * from register where name='"+s1+"' and ans='"+s2+"'";
+            String query="select * from register2 where name='"+s1+"' and ans='"+s2+"'";
             ResultSet r=s.executeQuery(query);
             
             while(r.next())

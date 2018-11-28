@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Aman
  */
-public class regervlet extends HttpServlet {
+public class abmissionform extends HttpServlet {
     
     
     @Override
@@ -26,22 +26,23 @@ public class regervlet extends HttpServlet {
     {
         PrintWriter out=res.getWriter();
         String name = req.getParameter("name");
-        int age = Integer.parseInt(req.getParameter("age"));
-        String gender = req.getParameter("gender");
-        String email= req.getParameter("email");
-        String password= req.getParameter("password");
-        String ans= req.getParameter("ans");
-        
+        String fathersname = req.getParameter("fathersname");
+        String email = req.getParameter("email");
+        String number = req.getParameter("number");
+        String tenpercent= req.getParameter("tenpercent");
+        String twpercent = req.getParameter("twpercent");
+        String pin = req.getParameter("pin");
        
+      
         try {
             String ss="jdbc:mysql://localhost:3306/hello";
             Class.forName("com.mysql.jdbc.Driver");
             Connection con=DriverManager.getConnection(ss,"root","");
             Statement s=con.createStatement();
-                  String query="insert into register2 values('"+name+"',"+age+",'"+gender+"','"+email+"','"+password+"','"+ans+"')";             
+                  String query="insert into leaveform values('"+name+"',"+fathersname+",'"+email+"','"+number+"', '"+tenpercent+"','"+twpercent+"','"+pin+"')";             
                     int count=s.executeUpdate(query);
                      out.print("<body><center><b><font color='blue'></font></b></center></body>");
-                    RequestDispatcher rd=req.getRequestDispatcher("index.html");  
+                    RequestDispatcher rd=req.getRequestDispatcher("firstpage.html");  
                     rd.include(req, res); 
                     
         } catch (Exception ex ) {

@@ -16,6 +16,14 @@
         <servlet-name>forgetpassword</servlet-name>
         <servlet-class>CollegeApplication.forgetpassword</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>leave</servlet-name>
+        <servlet-class>CollegeApplication.leave</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>abmissionform</servlet-name>
+        <servlet-class>CollegeApplication.abmissionform</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ApplicationApproval</servlet-name>
         <url-pattern>/ApplicationApproval</url-pattern>
@@ -31,6 +39,14 @@
     <servlet-mapping>
         <servlet-name>forgetpassword</servlet-name>
         <url-pattern>/forgetpassword</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>leave</servlet-name>
+        <url-pattern>/leave</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>abmissionform</servlet-name>
+        <url-pattern>/abmissionform</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
