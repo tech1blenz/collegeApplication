@@ -2,6 +2,7 @@
 <html>
     <head>
         <link href="menu.css" rel="stylesheet" style="css/text" />
+        
      <style>
 * {box-sizing: border-box;}
 
@@ -10,12 +11,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.div44
+{
+margin-left:400;
+font-size:20;
+}
 .topnav {
   overflow: hidden;
   background-color:gray;
   height:60px;
   width:400px;
 }
+
+
 
 
 .topnav input[type=text] {
@@ -31,6 +39,52 @@ body {
   .topnav input[type=text] {
     border: 1px solid #ccc;  
   }
+body {
+    background-image: url("Stanford.jpg");
+    background-repeat: no-repeat;
+     height: 500px;
+       background-size: 100% 100%;
+ 
+}
+.dropbtn {
+    background-color: gray;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:gray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ccc;}
+.info
+{
+     margin-top: 100px;
+  margin-right: 5px;
+}
 
 
 
@@ -39,20 +93,27 @@ body {
 
 </style>
 </head>
-<body background="pattern.jpg"> 
+<body>
 <div id="Menu">
 <ul>
 <li><a href="firstpage.html">Home</a></li>
 
-<li><a>Apply for</a>
-    <ul><li><a href="">leave</a></li>
-
-<li><a href="">registration</a></li>
-    </ul></li>
+<li>
+    <div class="dropdown">
+  <button class="dropbtn">Apply for</button>
+  <div class="dropdown-content">
+    <a href="leaveform.html">leave</a>
+    <a href="admission.html">admission</a>
+    
+  </div>
+</div>
+</li>
+    
 <li><a href="gallery.html">gallery</a></li>
-<li><a href="events.html">events</a></li>
+<li><a href="events.html">register</a></li>
 <li><a href="studentsinfo.html">student's info</a></li>
 <li><a href="aboutus.html">About us</a></li>
+
 </ul>
            
   
@@ -62,7 +123,20 @@ body {
   
   </div>
 </div>
-   
+    
+            
+            
+       
+    <div class="info">
+<center><form action="userp">  
+        <b> Enter your Email Id :</b> <input type="email" name="email" required><br/>  
+<br>
+<input type="submit" value="Show Data"/>  
+    </form></center></div>
+    
+          
+  
+
       
 
   
@@ -72,10 +146,10 @@ body {
     
     
     
-    <h1>students info</h1>
     
     
     
     
+</div>
     </body>
 </html>

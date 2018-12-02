@@ -4,12 +4,8 @@
         <link href="menu.css" rel="stylesheet" style="css/text" />
         
      <style>
-* {box-sizing: border-box;}
 
-body {
-  margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+
 
 .topnav {
   overflow: hidden;
@@ -17,17 +13,8 @@ body {
   height:60px;
   width:400px;
 }
-.chitkara{
-     height: 100;
-    width: 1346;
-    background-color: brown;
-     border: 2px solid black;
-}
-.chitkara chitkara2 {
-     height: 100;
-    width: 100;
-    
-}
+
+
 
 
 .topnav input[type=text] {
@@ -43,72 +30,102 @@ body {
   .topnav input[type=text] {
     border: 1px solid #ccc;  
   }
-body {
-    background-image: url("Stanford.jpg");
-    background-repeat: no-repeat;
-     height: 500px;
-       background-size: 100% 100%;
+
  
+
+.dropbtn {
+    background-color: gray;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
 }
 
-.block {
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:gray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
-    width: 30%;
-    height:40%;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 28px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-     margin-top: 50px;
-     margin-left:400px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ccc;}
+.new{ width: 1483px;
+      height:300px;
+    border: 1px solid #4CAF50;
+background-color: white}
+.first{
+    background-image: url("campus.jpg");
+    height:400px;
+    width:1483px;
+    background-repeat: no-repeat;
+    background-size: cover;
+     position: relative;
+     opacity:0.8;
+}
+
     
-     
-   
-}
-
-.block:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.block2 {
-    display: block;
-    width: 30%;
-    height:40%;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 28px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-     margin-top: 50px;
-     margin-left:400px;
-     
   
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.button1{
+    font-size: 24px;
+    background-color: #4CAF50;
+    text-align: center;
+     color: white;
+     cursor:pointer;
 }
 
 
-.block2:hover {
-    background-color: #ddd;
-    color: black;
-}
+
+
 </style>
 </head>
-<body>
+<body background="image.jpg">
 <div id="Menu">
 <ul>
 <li><a href="firstpage.html">Home</a></li>
 
-<li><a href="apply-for">Apply for</a>
+<li>
+    <div class="dropdown">
+  <button class="dropbtn">Apply for</button>
+  <div class="dropdown-content">
+    <a href="leaveform.html">leave</a>
+    <a href="admission.html">admission</a>
+    
+  </div>
+</div>
+</li>
     
 <li><a href="gallery.html">gallery</a></li>
-<li><a href="events.html">events</a></li>
+<li><a href="events.html">register</a></li>
 <li><a href="studentsinfo.html">student's info</a></li>
 <li><a href="aboutus.html">About us</a></li>
+
 </ul>
            
   
@@ -118,37 +135,28 @@ body {
   
   </div>
 </div>
-    <div class="chitkara">
-        
-            <img src="chitkara_image.jpg" alt="Smiley face" width="100" height="100">
+    
             
-            
-       
-        
-        
-    </div>
-
-
-
-    
-            <button class="block"><a style="text-decoration:none;color:black" href="leaveform.html">apply for leave</a></button>
-            <button class="block2"><a style="text-decoration:none;color:black" href="admission.html">apply for admission</a></button>
-
+ </div>
   
-
-      
-
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 </div>
+<div class="first">
+
+<div class="hero-text">
+    <h1 style="font-size:50px">WELCOME TO CHITKARA UNIVERSITY </h1>
+    <h3>WE ENSURE BETTER EDUCATION FOR A BETTER WORLD</h3>
+    <button class="button1">start your journey</button>
+  </div></div>
+<div class="new">
+   
+    <img src="website.jpg" alt="Smiley face" height="200" width="400" style="margin:50px 50px" align="left">
+    <img src="website.jpg" alt="Smiley face" height="200" width="400" style="margin:50px 50px" align="right">
+    <img src="website.jpg" alt="Smiley face" height="200" width="310" style="margin:50px 0px" align="center">
+</div>
+
+
+
+
+
     </body>
 </html>

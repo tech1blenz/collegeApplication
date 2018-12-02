@@ -2,6 +2,8 @@
 <html>
     <head>
         <link href="menu.css" rel="stylesheet" style="css/text" />
+        <link href="yell.css" rel="stylesheet" style="css/text" />
+        
      <style>
 * {box-sizing: border-box;}
 
@@ -18,6 +20,8 @@ body {
 }
 
 
+
+
 .topnav input[type=text] {
   float: right;
   padding: 6px;
@@ -31,14 +35,99 @@ body {
   .topnav input[type=text] {
     border: 1px solid #ccc;  
   }
-.new{
-    height: 500px;
-    width: 500px;
-     margin-top: 50px;
-    background-color: powderblue;
-     margin-right: 150px;
-    margin-left:400px;
+
+ 
+
+.dropbtn {
+    background-color: gray;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:gray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ccc;}
+        
+        
+input[type=text] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=email] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=password] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+
+input[type=submit] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=email]:focus {
+    border: 3px solid #555;
+}
+input[type=password]:focus {
+    border: 3px solid #555;
+}
+
 
 
 
@@ -46,17 +135,27 @@ body {
 
 </style>
 </head>
-<body background="pattern.jpg"> 
+<body background="pattern.jpg" >
 <div id="Menu">
 <ul>
 <li><a href="firstpage.html">Home</a></li>
 
-<li><a>Apply for</a></li>
-   
+<li>
+    <div class="dropdown">
+  <button class="dropbtn">Apply for</button>
+  <div class="dropdown-content">
+    <a href="leaveform.html">leave</a>
+    <a href="admission.html">admission</a>
+    
+  </div>
+</div>
+</li>
+    
 <li><a href="gallery.html">gallery</a></li>
-<li><a href="events.html">events</a></li>
+<li><a href="events.html">register</a></li>
 <li><a href="studentsinfo.html">student's info</a></li>
 <li><a href="aboutus.html">About us</a></li>
+
 </ul>
            
   
@@ -65,32 +164,50 @@ body {
   <input type="text" placeholder="Search..">
   
   </div>
-    
 </div>
-   
-    <div class="new">
-        <center> <h3> university sports meet</h3><br>
-        <h3> cse16 exam notice</h3><br>
-        <h3> admin hostel message</h3><br>
-        <h3> trial for cricket</h3><br>
-            <h3> university sports meet</h3>
-   
-            </center>
     
-        </div>
-    
+            
+            
+       
+        
+        
+    </div>
+</div>
+<div class="header">
+        <h1><center>REGISTER YOURSELF</center><h1>
+    </div>
+    <div class="login-page">
+  <div class="form">
+   <form method="post" action ="regervlet">
+        
 
-  
-    
-    
-    
-    
-    
-    
-    
-  
-    
-    
-    
+
+    <img src="chitkara_image.jpg" alt="Smiley face" height="100" width="100">
+<input type ="text"  name="name" placeholder="name"><br>
+<input type ="text"  name="fname" placeholder="father's name"><br>
+<input type = "email"  name="email" placeholder="email"><br>
+<input type = "text"  name="pnum" placeholder="phone-num"><br>
+<input type = "text"  name="dob" placeholder="date of birth"><br>
+<input type = "text"  name="tper" placeholder="class tenth percentage"><br>
+<input type = "text"  name="twper" placeholder="class 12th percentage"><br>
+<input type = "text"  name="board" placeholder="board"><br>
+
+<input type="submit" value="Register"><br>
+
+
+</form>
+
+  </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
     </body>
 </html>

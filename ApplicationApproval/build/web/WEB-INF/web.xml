@@ -24,6 +24,10 @@
         <servlet-name>abmissionform</servlet-name>
         <servlet-class>CollegeApplication.abmissionform</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>userp</servlet-name>
+        <servlet-class>CollegeApplication.userp</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ApplicationApproval</servlet-name>
         <url-pattern>/ApplicationApproval</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>abmissionform</servlet-name>
         <url-pattern>/abmissionform</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>userp</servlet-name>
+        <url-pattern>/userp</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
